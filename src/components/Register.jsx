@@ -9,8 +9,8 @@ function Register() {
 
     const handleSubmit = async () => {
         try {
-            // const url = "https://cafe-backend-three.vercel.app/api/users/register";
-            const url = `${API_URL}/api/users/register`;
+            const url = "https://cafe-backend-three.vercel.app/api/users/register";
+            // const url = `${API_URL}/api/users/register`;
             const result = await axios.post(url, user);
             setError("Data saved successfully");
         } catch (err) {
